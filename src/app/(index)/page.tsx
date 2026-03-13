@@ -8,6 +8,8 @@ import Features from './components/features'
 import KivoPhotos from './components/kivoPhotos'
 import Kv from './components/kv'
 import OwnYourValue from './components/ownYourValue'
+import Toolkit from './components/toolkit'
+import Categories from './components/categories'
 
 export const metadata: Metadata = {
   openGraph: {
@@ -24,6 +26,8 @@ const IndexPage = () => {
     <div className="overflow-x-hidden">
       <Kv />
       <OwnYourValue />
+      <Toolkit />
+      <Categories />
       <KivoPhotos />
       <DeliverValue />
       <Features />

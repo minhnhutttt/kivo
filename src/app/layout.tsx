@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Creepster } from 'next/font/google'
+import { Creepster, Shippori_Mincho } from 'next/font/google'
 import { ReactNode } from 'react'
 
 import Footer from '@/components/layout/footer'
@@ -18,6 +18,12 @@ const creepster = Creepster({
   weight: ['400'],
   subsets: ['latin'],
   variable: '--font-creepster',
+})
+
+const shippori = Shippori_Mincho({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-shippori',
 })
 
 export const metadata: Metadata = {
@@ -42,7 +48,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="ja">
-      <body className={`bg-stone-900 ${creepster.variable}`}>
+      <body className={`bg-stone-900 ${creepster.variable} ${shippori.variable}`}>
         <SlideThemeProvider>
           <Header />
           {children}
