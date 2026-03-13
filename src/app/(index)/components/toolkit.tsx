@@ -16,8 +16,12 @@ const VIDEOS = [
   { src: '/assets/video/video-02.mp4', label: 'Pixelate Image Render Effect' },
   { src: '/assets/video/video-03.mp4', label: 'Pixelate Image Render Effect' },
   { src: '/assets/video/video-04.mp4', label: 'Pixelate Image Render Effect' },
+  { src: '/assets/video/video-01.mp4', label: 'Pixelate Image Render Effect' },
+  { src: '/assets/video/video-02.mp4', label: 'Pixelate Image Render Effect' },
   { src: '/assets/video/video-03.mp4', label: 'Pixelate Image Render Effect' },
   { src: '/assets/video/video-04.mp4', label: 'Pixelate Image Render Effect' },
+  { src: '/assets/video/video-01.mp4', label: 'Pixelate Image Render Effect' },
+  { src: '/assets/video/video-02.mp4', label: 'Pixelate Image Render Effect' },
 ]
 
 const POSTER = '/assets/images/kv.png'

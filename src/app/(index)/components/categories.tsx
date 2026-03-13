@@ -1,5 +1,7 @@
 'use client';
 
+import Link from "next/link";
+
 const ITEMS = [
   { title: 'App \nIntroduction', src: '/assets/video/video-01.mp4' },
   { title: 'Download \nKIVO', src: '/assets/video/video-02.mp4' },
@@ -16,7 +18,7 @@ const ITEMS = [
 const CardItem = ({ title, src }: { title: string; src: string }) => {
   const [line1, line2] = title.split('\n');
   return (
-    <div className="group js-projects relative col-span-2 block aspect-[16/9] overflow-clip rounded-md text-[40px] md:col-span-1 md:rounded-lg md:text-[100px]">
+    <Link href="#" className="group js-projects relative col-span-2 block aspect-[16/9] overflow-clip rounded-md text-[40px] md:col-span-1 md:rounded-lg md:text-[100px]">
       <div className="title-text absolute inset-0 bg-black/20 z-10 flex scale-[0.96] items-center justify-center text-center text-white font-bold leading-snug duration-300 group-hover:scale-100 group-hover:opacity-100 md:opacity-0">
         {line1} <br /> {line2}
       </div>
@@ -29,7 +31,7 @@ const CardItem = ({ title, src }: { title: string; src: string }) => {
           className="absolute inset-0 duration-300 group-hover:scale-105"
         />
       </div>
-    </div>
+    </Link>
   );
 };
 
